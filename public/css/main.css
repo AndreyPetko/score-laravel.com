@@ -1,0 +1,21 @@
+
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+
+table {
+	width: 100%;
+}
+
+tr {
+	width: 100%;
+}
+
+td {
+	border: 1px solid black;
+	width: 25%;
+	text-align: center;
+}
