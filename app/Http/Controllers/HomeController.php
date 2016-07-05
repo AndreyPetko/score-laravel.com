@@ -14,6 +14,11 @@ class HomeController extends Controller
 		$games = Game::getGames();
 		$games = json_decode($games);
 
+
+		foreach ($games as $game) {
+			$game->day = substr($game->day, 0, 10);
+		}
+
 		return view('gamesList', compact('games'));
 	}
 
